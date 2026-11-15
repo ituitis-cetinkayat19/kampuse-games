@@ -80,7 +80,7 @@ function draw(turn: Turn<View> | null) {
     showToast('noValidMoves', 3000);
   }
   if (turnPassed != null) {
-    showToast(kampuse.me.side === -1 ? 'viewerTurnPassed' : (turnPassed === kampuse.me.side ? 'yourTurnPassed' : 'opponentTurnPassed'), 3000);
+    showToast(kampuse.watching ? 'viewerTurnPassed' : (turnPassed === kampuse.me.side ? 'yourTurnPassed' : 'opponentTurnPassed'), 3000);
   }
 }
 
