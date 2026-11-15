@@ -1,0 +1,153 @@
+/* XOX in Kampuse's sticker look. A game may look however it likes; this is just the example. */
+:root {
+  --ink: #0e2148;
+  --soft: #4a5a7d;
+  --light-blue: #82caff;
+  --light-green: #32cd32;
+  --card: #ffffff;
+  --honey: #ffc233;
+  --dark-highlight: #fcae1e;
+  --highlight: #f4c430;
+  --light-highlight: #f4c430;
+  --dark: #000000;
+  --black: #111111;
+  --dark-gray: #333333;
+  --light-gray: #dddddd;
+  --dark-brown: #654321;
+  --light-brown: #c3b091;
+  --dark-captured: #d1001f;
+  --captured: #ff2c2c;
+  --light-captured: #f94449;
+}
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  background: var(--light-green);
+  color: var(--ink);
+  font: 15px/1.35 system-ui, -apple-system, sans-serif;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+.app { display: flex; flex-direction: column; gap: 14px; height: 100%; padding: 16px; }
+.loading { margin: auto; font-size: 28px; }
+
+.players { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.player {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px;
+  border: 2px solid var(--ink);
+  border-radius: 14px;
+  background: var(--card);
+  box-shadow: 0 3px 0 var(--ink);
+}
+.player.now { background: var(--honey); }
+.player.gone { opacity: 0.45; }
+.player img { width: 30px; height: 30px; }
+.player b { display: block; font-size: 14px; }
+.player small { color: var(--soft); font-weight: 700; }
+.mark { margin-left: auto; font-size: 18px; font-weight: 900; }
+
+.status { min-height: 26px; text-align: center; font-size: 18px; font-weight: 800; }
+.status .clock { font-variant-numeric: tabular-nums; color: var(--soft); }
+
+.board { 
+  display: grid; 
+  flex: none; 
+  grid-template-columns: repeat(8, 1fr); 
+  grid-template-rows: repeat(8, 1fr); 
+  width: min(100%, 320px); 
+  margin: 0 auto; 
+  aspect-ratio: 1;
+  border: 3px solid var(--dark);
+}
+.cell {
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  color: inherit;
+  font-size: 25px;
+  overflow: hidden;
+  box-shadow: 0 3px 0 var(--ink);
+  font-weight: 900;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cell.even {
+  background-color: var(--dark-brown);
+}
+.cell.odd {
+  background-color: var(--light-brown);
+}
+.cell.even.highlight {
+  background-color: var(--dark-highlight);
+}
+.cell.odd.highlight {
+  background-color: var(--light-highlight);
+}
+.cell.even.captured {
+  background-color: var(--dark-captured);
+}
+.cell.odd.captured {
+  background-color: var(--light-captured);
+}
+.cell:disabled { cursor: default; }
+.cell.open:active { transform: translateY(3px); box-shadow: none; }
+
+.available-cell {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: var(--honey);
+  border: 2px solid var(--dark);
+}
+
+.piece {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+}
+
+.black-piece {
+  background-color: var(--dark-gray);
+  border: 5px solid var(--black);
+}
+
+.white-piece {
+  background-color: var(--card);
+  border: 5px solid var(--light-gray);
+}
+
+.toast {
+  position: fixed;
+  left: 50%;
+  bottom: 70px;
+  transform: translateX(-50%);
+  padding: 8px 14px;
+  border: 2px solid var(--ink);
+  border-radius: 12px;
+  background: var(--card);
+  box-shadow: 0 3px 0 var(--ink);
+  font-weight: 700;
+  white-space: nowrap;
+}
+.leave {
+  margin-top: auto;
+  align-self: center;
+  min-height: 40px;
+  padding: 0 16px;
+  border: 2px solid var(--ink);
+  border-radius: 12px;
+  background: var(--card);
+  box-shadow: 0 3px 0 var(--ink);
+  font: inherit;
+  font-weight: 700;
+  color: inherit;
+  cursor: pointer;
+}
+
+.leave:active { transform: translateY(3px); box-shadow: none; }
