@@ -5,5 +5,5 @@
   "kind": "table",
   "players": { "min": 2, "max": 2 },
   "turnSeconds": 30,
-  "about": "Place a piece to convert all pieces between your existing piece and the new piece into your color. The player with more pieces on the board when the board is full wins."
+  "about": "Place a piece to convert all pieces between your existing piece and the new piece into your color. The player with most pieces on the board when the board is full or when no moves can be played wins."
 }
