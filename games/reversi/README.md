@@ -12,7 +12,11 @@ Each turn you must play a move that captures at least one opponent piece. To cap
 ### Screenshots
 
 <div>
-    <img src="./screenshots/reversi-1.png" alt="Reversi Screenshot 1" width="600">
-    <img src="./screenshots/reversi-2.png" alt="Reversi Screenshot 2" width="600">
-    <img src="./screenshots/reversi-3.png" alt="Reversi Screenshot 3" width="600">
+    <img src="./screenshots/reversi-1.png" alt="Reversi Screenshot 1" width="300">
+</div>
+<div>
+    <img src="./screenshots/reversi-2.png" alt="Reversi Screenshot 2" width="300">
+</div>
+<div>
+    <img src="./screenshots/reversi-3.png" alt="Reversi Screenshot 3" width="300">
 </div>
