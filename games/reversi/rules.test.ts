@@ -3,8 +3,6 @@ import { test } from 'node:test'
 import { fuzz, startGame } from '@kampuse/games-kit/testing'
 import rules from './rules'
 
-//White starts and black wins
-
 type TestMove = {
   side: number
   move: { x: number, y: number }

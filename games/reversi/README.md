@@ -1,6 +1,6 @@
 # Reversi
 
-Made with [Kampuse Games Kit](https://kampuse.com/games-kit)
+Made with [Kampüse Games Kit](https://kampuse.com/games-kit)
 
 **Player Count:** 2  
 **Seconds per turn:** 30
