@@ -1,6 +1,9 @@
-# Reversi
+# Games Made with Kampüse Games Kit
 
-Made with [Kampüse Games Kit](https://kampuse.com/games-kit)
+Website: https://kampuse.com/games-kit  
+Github: https://github.com/kampuseapp/games-kit
+
+## Reversi
 
 **Player Count:** 2  
 **Seconds per turn:** 30
@@ -12,11 +15,11 @@ Each turn you must play a move that captures at least one opponent piece. To cap
 ### Screenshots
 
 <div>
-    <img src="./screenshots/reversi-1.png" alt="Reversi Screenshot 1" width="350">
+    <img src="games/reversi/screenshots/reversi-1.png" alt="Reversi Screenshot 1" width="350">
 </div>
 <div>
-    <img src="./screenshots/reversi-2.png" alt="Reversi Screenshot 2" width="350">
+    <img src="games/reversi/screenshots/reversi-2.png" alt="Reversi Screenshot 2" width="350">
 </div>
 <div>
-    <img src="./screenshots/reversi-3.png" alt="Reversi Screenshot 3" width="350">
+    <img src="games/reversi/screenshots/reversi-3.png" alt="Reversi Screenshot 3" width="350">
 </div>
